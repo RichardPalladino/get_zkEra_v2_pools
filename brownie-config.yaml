@@ -1,0 +1,85 @@
+# dependencies:
+#   - uniswap/contracts@1.0.1
+# compiler:
+#   solc:
+#     remappings:
+#       - '@uniswap=Uniswap/v2-core@1.0.1'
+
+networks:
+  default: mainnet-fork
+  goerli:
+    factories:
+      uniswap_v2: "0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f"
+      sushiswap_v2: "0xc35DADB65012eC5796536bD9864eD8773aBc74C4"
+    verify: True
+  mainnet-fork:
+    factories:
+      fraxswap_v1_old: "0x54F454D747e037Da288dB568D4121117EAb34e79"
+      fraxswap_v1: "0xB076b06F669e682609fb4a8C6646D2619717Be4b"
+      fraxswap_v2: "0x43eC799eAdd63848443E2347C49f5f52e8Fe0F6f"
+      apeswap_v2: "0xBAe5dc9B19004883d0377419FeF3c2C8832d7d7B"
+      shibaswap: "0x115934131916C8b277DD010Ee02de363c09d037c"
+      swapr: "0xd34971BaB6E5E356fd250715F5dE0492BB070452"
+      radioshack_dex: "0x91fAe1bc94A9793708fbc66aDcb59087C46dEe10"
+      bamboo_swap: "0x3823ac41b77e51bf0e6536ce465479cbdedcaea9"
+      sushiswap_v2: "0xC0AEe478e3658e2610c5F7A4A2E1777cE9e4f2Ac"
+      uniswap_v2: "0x5C69bEe701ef814a2B6a3EDD4B1652CB9cc5aA6f"
+      verse_dex: "0xee3E9E46E34a27dC755a63e2849C9913Ee1A06E2"  # bitcoin.com's DEX
+    usd_contracts:
+      usdc:
+        address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
+        decimals: 6
+      usdt:
+        address: "0xdAC17F958D2ee523a2206206994597C13D831ec7"
+        decimals: 6
+      busd:
+        address: "0x4Fabb145d64652a948d72533023f6E7A623C7C53"
+        decimals: 18
+      dai:
+        address: "0x6B175474E89094C44Da98b954EedeAC495271d0F"
+        decimals: 18
+      frax:
+        address: "0x853d955aCEf822Db058eb8505911ED77F175b99e"
+        decimals: 18
+      tusd:
+        address: "0x0000000000085d4780B73119b644AE5ecd22b376"
+        decimals: 18
+      usdp:
+        address: "0x8E870D67F660D95d5be530380D0eC0bd388289E1"
+        decimals: 18
+      usdd:
+        address: "0x0C10bF8FcB7Bf5412187A595ab97a3609160b5c6"
+        decimals: 18
+      gusd:
+        address: "0x056Fd409E1d7A124BD7017459dFEa2F387b6d5Cd"
+        decimals: 2
+      cusdc:
+        address: "0x39AA39c021dfbaE8faC545936693aC917d5E7563"
+        decimals: 8
+      cdai:
+        address: "0x5d3a536E4D6DbD6114cc1Ead35777bAB948E3643"
+        decimals: 8
+      mim:
+        address: "0x99D8a9C45b2ecA8864373A26D1459e3Dff1e17F3"
+        decimals: 18
+      dola:
+        address: "0x865377367054516e17014CcdED1e7d814EDC9ce4"
+        decimals: 18
+      ousd:
+        address: "0x2A8e1E676Ec238d8A992307B495b45B3fEAa5e86"
+        decimals: 18
+      wcusd:
+        address: "0xad3E3Fc59dff318BecEaAb7D00EB4F68b1EcF195"
+        decimals: 18
+      fei:
+        address: "0x956F47F50A910163D8BF957Cf5846D573E7f87CA"
+        decimals: 18
+      usdk:
+        address: "0x1c48f86ae57291F7686349F12601910BD8D470bb"
+        decimals: 18  
+    verify: False
+  development:
+    verify: False
+dotenv: .env
+wallets:
+  from_key: ${TESTNET_PRIVATE_KEY}
