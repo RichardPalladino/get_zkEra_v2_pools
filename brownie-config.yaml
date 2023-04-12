@@ -12,7 +12,7 @@ networks:
       velocore_dex: "0xE140EaC2bB748c8F456719a457F26636617Bb0E9"
       mute_io: "0x40be1cBa6C5B47cDF9da7f963B6F761F4C60627D"
       gemswap: "0x065c8703132F2A38Be3d2dbF7Be6BE455930560c"
-      
+      space_fi: "0x0700Fb51560CfC8F896B2c812499D17c5B0bF6A7"
     # usd_contracts:
     #   usdc:
     #     address: "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48"
