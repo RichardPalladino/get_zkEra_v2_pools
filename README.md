@@ -15,5 +15,3 @@ Some LPs are void - maybe they are empty / have little reserves or give another 
 ### General procedural flow:
 
 I may describe my code here later.
-
-` UniswapV2 factory had 149575 LPs on 2022, March 4th. `
